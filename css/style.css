@@ -1,7 +1,8 @@
 :root {
     --spook: #100;
-    --jello: #ff0;
+    --jello: #fc0;
     --rubrum: #f00;
+    font-family: 'MedievalSharp', cursive;
 }
 
 html{
@@ -13,6 +14,11 @@ html{
 body{
     background: linear-gradient(to right, var(--rubrum), var(--spook));
     margin: 20px;
+}
+
+.wrapper{
+    display: grid;
+    gap: 20px;
 }
 
 .top {
@@ -29,7 +35,16 @@ body{
     background-image: url('../img/spooky.gif');
     background-size: cover;
     background-position: top;
-    color: white;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.party > * {
+    background: var(--jello);
+    padding: 5px;
 }
 
 .cta {
@@ -55,4 +70,34 @@ body{
 
 .cta p {
     margin: 0;
+}
+
+button {
+    background: var(--jello);
+    border: 0;
+    padding: 20px;
+}
+
+/*Menyu*/
+
+.menu ul {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.menu a {
+    background: var(--jello);
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+/*hayd menyu baton*/
+[aria-controls="menu-list"] {
+    display: none;
 }
