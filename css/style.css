@@ -9,6 +9,7 @@ html{
     box-sizing: border-box;
     font-weight: 900;
     color: var(--spook);
+    font-family: sans-serif;
 }
 
 body{
@@ -100,4 +101,26 @@ button {
 /*hayd menyu baton*/
 [aria-controls="menu-list"] {
     display: none;
+}
+
+/*feetyher Secshön*/
+.features{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.feature {
+    background: #fff;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.feature .icon {
+    font-size: 3rem;
+}
+
+.feature p {
+    color: rgba(0, 0, 0, 0.5);
 }
