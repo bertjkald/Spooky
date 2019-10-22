@@ -73,8 +73,41 @@
         </div>
     </div>
 
-    <div class="about"></div>
+    <div class="about">
+        <img src="img/food.jpg" alt="Bonemeal">
+        <div class="about__details">
+            <h2>Fiitšyõrd Boun Miil</h2>
+            <p>Teysts Spooki</p>
+            <p>Mey Meyk yuu intu ay skeleton</p>
+            <button>Lõrn Mowr</button>
+        </div>
+    </div>
 
+    <div class="gallery">
+        <h2>Instänt Gräms</h2>
+        <img src="https://source.unsplash.com/random/201x201" alt="">
+        <img src="https://source.unsplash.com/random/202x202" alt="">
+        <img src="https://source.unsplash.com/random/203x203" alt="">
+        <img src="https://source.unsplash.com/random/204x204" alt="">
+        <img src="https://source.unsplash.com/random/205x205" alt="">
+        <img src="https://source.unsplash.com/random/206x206" alt="">
+        <img src="https://source.unsplash.com/random/207x207" alt="">
+        <img src="https://source.unsplash.com/random/208x208" alt="">
+        <img src="https://source.unsplash.com/random/209x209" alt="">
+        <img src="https://source.unsplash.com/random/210x210" alt="">
+    </div>
+    
+    <script>
+        const menuButton = document.querySelector('button[aria-expanded]');
+        console.log(menuButton);
+        function toggleMenu({target}){
+            const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+            menuButton.setAttribute('aria-expanded', !expanded);
+            console.log("Taggowld!");
+        }
+
+        menuButton.addEventListener('click', toggleMenu);
+    </script>
 </div>
 </body>
 </html>
